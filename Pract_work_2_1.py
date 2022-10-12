@@ -8,7 +8,6 @@ data = {
     "data":[]
 }
 
-
 for page in range(0,41):
     url = f"https://barnaul.hh.ru/search/vacancy?text=python+%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&from=suggest_post&salary=&clusters=true&ored_clusters=true&enable_snippets=true&page={page}&hhtmFrom=vacancy_search_list"
     resp = req.get(url,  headers={'user-agent': 'Mozilla/5.0'})
